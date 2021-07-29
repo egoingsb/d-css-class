@@ -9,19 +9,23 @@
 <body>
     <header>
         <h1><a href="index.html">WEB</a></h1>
-        
-        <!--         
-        <input type="button" value="night" onclick="
-            document.querySelector('body').style.backgroundColor='black';
-            document.querySelector('body').style.color='white';
-        ">
-        <input type="button" value="day" onclick="
-            document.querySelector('body').style.backgroundColor='white';
-            document.querySelector('body').style.color='black';
-        "> 
-        -->
 
-        
+        <input type="button" id="modeBtn" value="night" onclick="
+            var modeBtn = this;
+            if(modeBtn.value === 'night'){
+            // 1. 만약에 이 버튼의 value 값이 night라면 
+                document.querySelector('body').style.backgroundColor='black';
+                document.querySelector('body').style.color='white';
+                // 이 버튼의 value 값을 day로 바꾼다. 
+                modeBtn.value = 'day';
+            } else {
+            // 2. 아니라면 
+                document.querySelector('body').style.backgroundColor='white';
+                document.querySelector('body').style.color='black';
+                // 이 버튼의 value 값을 night로 바꾼다. 
+                modeBtn.value = 'night';
+            }
+        ">
 
     </header>
     <div id="nav">
