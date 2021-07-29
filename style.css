@@ -1,0 +1,10 @@
+body{
+    margin:0;             
+}
+header{
+    border-bottom:5px solid red;
+    padding-left:15px;
+}
+header a{
+    text-decoration:none;
+}
