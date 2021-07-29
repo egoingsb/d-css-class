@@ -10,5 +10,8 @@ header a{
 }
 nav {
     border-right:5px solid red;
-    width:100px;
+}
+#nav{
+    display:grid;
+    grid-template-columns: 200px 1fr;
 }
