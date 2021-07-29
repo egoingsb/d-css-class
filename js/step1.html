@@ -1,0 +1,17 @@
+<html>
+    <head></head>
+    <body>
+        <h1>script tag를 이용한 실행</h1>
+        <script>
+            document.write(1+1);
+        </script>
+
+        <h1>이벤트 프로그래밍</h1>
+        <div id="msg"></div>
+        <input type="button" value="안녕" onclick="
+            // 1. id가 msg인 태그를 선택한다. 
+            // 2. innerHTML을 이용해서 반갑습니다를 넣는다. 
+            document.querySelector('#msg').innerHTML = '반갑습니다';
+        ">
+    </body>
+</html>
