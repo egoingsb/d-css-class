@@ -8,3 +8,7 @@ header{
 header a{
     text-decoration:none;
 }
+nav {
+    border-right:5px solid red;
+    width:100px;
+}
